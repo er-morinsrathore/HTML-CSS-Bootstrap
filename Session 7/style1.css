@@ -1,0 +1,11 @@
+.playlist-item {
+background-color: #121212;
+color: white;
+padding: 10px;
+margin: 5px 0;
+}
+
+#now-playing {
+background-color: #1db954;
+color: black;
+}
