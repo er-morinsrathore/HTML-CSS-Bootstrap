@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Product Grid</title>
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+
+    img {
+        width: 120px;
+    }
+    /* Tablet */ 
+    @media (max-width: 768px) { 
+        .grid { 
+            grid-template-columns: repeat(2, 1fr);
+            } 
+        }
+    /* Mobile */ 
+    @media (max-width: 480px) {
+        .grid {
+            grid-template-columns: 1fr;
+            }
+         }
+</style>
+
+</head>
+
+<body>
+
+<div class="grid">
+
+<div class="card">
+    <img src="./p1.jpg">
+    <p>JBL Earbuds</p>
+</div>
+
+<div class="card">
+    <img src="./p2.jpg">
+    <p>Guitar</p>
+</div>
+
+<div class="card">
+    <img src="./p3.jpg">
+    <p>Kookabura Bat</p>
+</div>
+
+<div class="card">
+    <img src="./p4.jpg">
+    <p>FIFA World Cup 2026 Football</p>
+</div>
+
+<div class="card">
+    <img src="./p5.jpg">
+    <p>Fountain Pen</p>
+</div>
+
+<div class="card">
+    <img src="./product.jpg">
+    <p>Headphones</p>
+</div>
+
+</div>
+
+</body>
+</html>
