@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zomato Style Layout</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            display: flex;
+        }
+           
+        nav {
+            width: 220px;
+            background: #10033e;
+            padding: 20px;
+            display: block;
+        }
+
+        nav a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .video-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div style="width:100%">
+
+        <!-- Header -->
+        <header>
+            <h2>Top Restaurants near you</h2>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Existing Restaurant Section -->
+            <section>
+                <article class="restaurant-card">
+                    <img src="./tinello_1.jpg" alt="Vid Thumbnail">
+                    
+                    <!-- CLICKABLE TITLE -->
+                    <h3>
+                        <a href="#tinello-product" target="_blank">TINELLO</a>
+                    </h3>
+
+                    <p><em>The most flavourful and elegant Italian dishes from the most authentic Italian cuisine restaurant of Ahmedabad.</em></p>
+                    <footer>Rating: 4.9/5 Delivery Time: 30 mins</footer>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="./China_House.jpg" alt="Vid Thumbnail">
+                    <h3>CHINA HOUSE</h3>
+                    <p><em>Choose from the most lucious and diverse list of Chinese dishes from the most authentic Chinese cuisine restaurant of Ahmedabad.</em></p>
+                    <footer>Rating: 4.6/5 Delivery Time: 28 mins</footer>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="./ishaara.jpg" alt="Vid Thumbnail">
+                    <h3>ISHAARA</h3>
+                    <p><em>Experience the spices and flavours you have not tasted before, bringing out the DESI in you.</em></p>
+                    <footer>Rating: 4.9/5 Delivery Time: 35 mins</footer>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="./Mexican.jpg" alt="Vid Thumbnail">
+                    <h3>MEXICANO BY THE WAY</h3>
+                    <p><em>Bringing the taste of Mexico here, right in your city with never before experienced spices.</em></p>
+                    <footer>Rating: 4.8/5 Delivery Time: 40 mins</footer>
+                </article>
+            </section>
+
+            <!-- Product Page Section -->
+            <section id="tinello-product">
+
+                <!-- Breadcrumb Navigation -->
+                <nav>
+                    <a href="#">Home</a> >
+                    <a href="#">Italian</a> >
+                    <span>Tinello</span>
+                </nav>
+
+                <!-- Product Header -->
+                <header>
+                    <h2>Tinello - Signature Pasta</h2>
+                    <img src="./tinello_1.jpg" alt="Tinello Pasta" width="300">
+                </header>
+
+                <!-- Product Details -->
+                <article>
+                    <h3>Description</h3>
+                    <p>
+                        A rich and authentic Italian pasta made with handpicked ingredients,
+                        slow-cooked sauces, and traditional recipes that deliver deep, elegant flavors.
+                    </p>
+                    <h4>Price: ₹499</h4>
+                    <p>Category: Italian Cuisine</p>
+                </article>
+
+                <!-- Product Footer -->
+                <footer>
+                    <p>Offer: 20% OFF on first order</p>
+                    <p>Warranty: Freshness guaranteed or refund</p>
+                </footer>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            © 2026 MSR BLOG Demo — Created for Learning Semantic HTML
+        </footer>
+
+    </div>
+
+</body>
+</html>
