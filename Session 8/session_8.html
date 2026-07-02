@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Responsive Product Card</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .card {
+        display: flex;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        max-width: 600px;
+    }
+
+    .card img {
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Breakpoint 1200px */
+    @media only screen and (max-width: 1200px) {
+        .card {
+            padding: 18px;
+            font-size: 18px;
+        }
+    }
+
+    /* Breakpoint 900px */
+    @media only screen and (max-width: 900px) {
+        .card {
+            padding: 15px;
+            font-size: 16px;
+        }
+    }
+
+    /* Breakpoint 600px (also changes layout) */
+    @media only screen and (max-width: 600px) {
+        .card {
+            flex-direction: column;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .card img {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="./product.jpg" alt="Product">
+
+<div class="details">
+    <h2>Wireless Headphones</h2>
+    <p>High-quality sound with noise cancellation</p>
+    <p><strong>₹1999</strong></p>
+</div>
+
+</div>
+
+</body>
+</html>
