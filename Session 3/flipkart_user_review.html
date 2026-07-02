@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 3</title>
+  </head>
+  <body>
+    <h1>Flipkart Style Feedback-Forms</h1>
+    <form method = "post" action="">
+      <label for="uname">Username: </label>
+      <input type="text" id="uname" required  maxlength="10"/>
+      <br />
+      <br />
+          <label for="rating">Product rating </label>
+          <select name="rating" id="rating" required>
+          <option value="" disabled selected hidden><strong><em>Select</em></strong></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+          <label for="rating">Delivery rating</label>
+          <select name="rating" id="rating">
+          <option value="" disabled selected hidden><strong><em>Select</em></strong></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <label for = "additional_review">Add a detailed review: </label> <br>
+        <textarea name = "additional_review" id = "additional_review" required minength = "20"> </textarea>
+        <br>
+        <input type="submit" />
+
+
+      
+    </form>
+  </body>
+</html>
