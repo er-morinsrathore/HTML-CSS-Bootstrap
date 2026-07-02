@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Movie Poster Grid</title>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .grid {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .poster {
+        position: relative;
+        width: 150px;
+    }
+
+    .poster img {
+        width: 100%;
+        display: block;
+    }
+
+    .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: red;
+        color: white;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="grid">
+
+<div class="poster">
+    <img src="./movie1.jpg" alt="Movie 1">
+    <div class="badge">New</div>
+</div>
+
+<div class="poster">
+    <img src="./movie2.jpg" alt="Movie 2">
+</div>
+
+<div class="poster">
+    <img src="./movie3.jpg" alt="Movie 3">
+</div>
+
+</div>
+
+</body>
+</html>

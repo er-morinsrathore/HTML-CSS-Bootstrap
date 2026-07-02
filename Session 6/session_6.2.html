@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Product Tile</title>
+<style>
+    .card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 20px;
+        width: 250px;
+        font-family: Arial;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .name {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .price {
+        display: inline-block;
+        margin-left: 10px;
+        color: green;
+    }
+
+    .hide-price {
+        display: none;
+    }
+
+    .whatsapp-badge {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366;
+        color: white;
+        padding: 12px 15px;
+        border-radius: 50px;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    <img src="./product.jpg" alt="Product Image">
+
+<div>
+    <span class="name">Wireless Headphones</span>
+    <span class="price">₹1999</span>
+</div>
+
+</div>
+
+<div class="card">
+    <img src="./product.jpg" alt="Product Image">
+
+<div>
+    <span class="name">Wireless Headphones</span>
+    <span class="price hide-price">₹1999</span>
+</div>
+
+</div>
+
+<div class="whatsapp-badge">
+    Chat
+</div>
+
+</body>
+</html>
