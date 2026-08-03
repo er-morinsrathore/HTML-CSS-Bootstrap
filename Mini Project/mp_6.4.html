@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html> <head> <title>Preview Cards</title> <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .card { padding: 10px; margin: 10px; }
+    .spotify { border: 2px solid green; }
+    .youtube { border: 2px solid red; }
+    .apple { border: 2px solid black; }
+</style>
+
+</head>
+
+<body>
+
+<div id="output"></div>
+
+<script> function getName(url) { return url.split("/").pop(); } let links = [ {url: "https://spotify.com/user123", cls:"spotify"}, {url: "https://youtube.com/user456", cls:"youtube"}, {url: "https://apple.com/user789", cls:"apple"} ]; let out = document.getElementById("output"); links.forEach(l => { out.innerHTML += "<div class='card "+l.cls+"'>" + getName(l.url) + " <a href='"+l.url+"' target='_blank'>Visit</a></div>"; }); </script>
+
+</body> </html>
